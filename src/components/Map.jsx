@@ -1,55 +1,116 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import { Map as MapBox } from 'react-map-gl';
+import cameras from '../labels/cameraCoordinates';
+import Loader from './Loader';
+import mapboxgl from 'mapbox-gl';
+import CamerasLayer from './CamerasLayer';
+import cameraImg from "../img/camera-marker.png"
 
-const Mapa = styled.div`
+const style1 = 'mapbox://styles/m3ida/cl4cwx6zp003k14mibkgxxoxc'; //dark-mode
+const style2 = 'mapbox://styles/m3ida/cl4cx294j002q14uccgclgekz'; //light-mode
+
+const MapContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
 
     .mapboxgl-control-container {
-      display: none;
+        display: none;
+        color: red;
     }
 `;
 
+const ThemeSwitch = styled.img`
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 3em;
+    height: 3em;
+`;
+
+//webcam camara de lobos: https://www.netmadeira.com/webcams-madeira/load/netmadeira/camara-de-lobos/1654299741/4a37790b163a5a34598dd88b68139d2e
+
 function Map() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoibTNpZGEiLCJhIjoiY2t5YWUwcWJhMDRtYzJ3bzh4aXdzaXR5biJ9.fSgha4dxWzm65sez1AZ7HA';
+    const mapRef = useRef(null);
+    const [boundsSet, setBoundsSet] = useState(false);
+    const [mapStyle, setMapStyle] = useState(style1);
+    const [loading, setLoading] = useState(true);
 
-    const mapContainer = useRef(null);
-    const map = useRef(null);
-    const [lng, setLng] = useState(-16.8930); //madeira -> -16.8930 32.7450
-    const [lat, setLat] = useState(32.7450);
-    const [zoom, setZoom] = useState(7);
+    const interactions = ['scrollZoom', 'boxZoom', 'dragPan', 'keyboard', 'doubleClickZoom', 'touchZoomRotate'];
 
-    const bounds = [
-        [-17.8500, 32.3807], // Southwest coordinates -> -17.5000 32.1807
-        [-15.916, 33.1785], // Northeast coordinates -> -15.8167 33.3785
-    ];
+    return (
+        <MapContainer>
+            <Loader loading={loading} />
+            <MapBox
+                ref={mapRef}
+                initialViewState={{
+                    longitude: -14.962,
+                    latitude: 32.745,
+                    zoom: 2,
+                }}
+                onLoad={(e) => {
+                    const map = mapRef.current.getMap();
 
-    useEffect(() => {
-        if (map.current) return; // initialize map only once
-        map.current = new mapboxgl.Map({
-            container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/dark-v10',
-            center: [lng, lat],
-            zoom: zoom,
-            maxBounds: bounds
-        });
-    });
+                    map.loadImage(cameraImg, (error, image) => {
+                        if(error) console.log(error)
+                        
+                        map.addImage('camera-icon', image);
+                    })
 
-    useEffect(() => {
-        if (!map.current) return; // wait for map to initialize
-        map.current.on('move', () => {
-            setLng(map.current.getCenter().lng.toFixed(4));
-            setLat(map.current.getCenter().lat.toFixed(4));
-            setZoom(map.current.getZoom().toFixed(2));
-        });
-        console.log(lng, lat);
-    });
+                    
 
-    return <Mapa ref={mapContainer}></Mapa>;
+                    interactions.forEach((interaction) => {
+                        map[interaction].disable();
+                    });
+
+                    map.dragRotate.disable();
+                    var p1 = { lng: -17.30463610839638, lat: 32.61438311514739 };
+                    var p2 = { lng: -16.614557373046978, lat: 32.89964297003729 };
+
+                    var madeiraBounds = new mapboxgl.LngLatBounds(p1, p2);
+                    map.fitBounds(madeiraBounds);
+                }}
+                onZoomEnd={(e) => {
+                    if (!boundsSet) {
+                        const map = mapRef.current.getMap();
+                        map.setMaxBounds(map.getBounds());
+                        setBoundsSet(true);
+
+                        interactions.forEach((interaction) => {
+                            map[interaction].enable();
+                        });
+                        console.log(map)
+                    }
+                }}
+                onStyleData={(e) => {
+                    if (loading) {
+                        setTimeout(() => {
+                            setLoading(false);
+                        }, 2000);
+                    }
+                }}
+                mapStyle={mapStyle}
+                mapboxAccessToken='pk.eyJ1IjoibTNpZGEiLCJhIjoiY2t5YWUwcWJhMDRtYzJ3bzh4aXdzaXR5biJ9.fSgha4dxWzm65sez1AZ7HA'
+            >
+                <CamerasLayer />
+            </MapBox>
+            <ThemeSwitch
+                src={mapStyle == style1 ? './img/light.svg' : './img/dark.svg'}
+                onClick={(e) => {
+                    if (!loading) {
+                        setMapStyle(mapStyle == style1 ? style2 : style1);
+                        const map = mapRef.current.getMap();
+                        // map.setStyle(mapStyle);
+                        setLoading(true);
+                    }
+                }}
+            />
+        </MapContainer>
+    );
 }
 
 export default Map;
