@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { Map as MapBox } from 'react-map-gl';
+import { Map as MapBox, Marker } from 'react-map-gl';
 import { Pannellum, PannellumVideo } from 'pannellum-react';
 
 import cameras from '../coords/cameraCoordinates';
 import mapboxgl from 'mapbox-gl';
 import CamerasLayer from './Layers/CamerasLayer';
+import cities from '../coords/cities';
+import RoomRoundedIcon from '@mui/icons-material/RoomRounded';
 
 const iconsFolder = require.context('../img/icons', false, /\.(png)$/);
 const iconsNames = iconsFolder.keys();
@@ -77,10 +79,10 @@ function Map() {
             setShowMap(true);
         }, 4500);
     }, [])
-    
+
 
     return (
-        // <Pannellum -> This shows a 360º image
+        // <Pannellum 
         //     width='100%'
         //     height='1080px'
         //     image={require('../img/gl-cam.jpg')}
@@ -91,50 +93,53 @@ function Map() {
         //     showControls={false}
         // />
         <MapContainer>
-            { showMap ?
-            <MapBox
-                ref={mapRef}
-                initialViewState={{
-                    longitude: -14.962,
-                    latitude: 32.745,
-                    zoom: 2,
-                }}
-                interactiveLayerIds={['cameras-layer']}
-                onClick={(e) => {
-                    console.log(e);
-                }}
-                onLoad={(e) => {
-                    const map = mapRef.current.getMap();
-
-                    loadImages(map);
-
-                    setMapControls(false);
-
-                    map.dragRotate.disable();
-                    var p1 = { lng: -17.30463610839638, lat: 32.61438311514739 };
-                    var p2 = { lng: -16.614557373046978, lat: 32.89964297003729 };
-
-                    var madeiraBounds = new mapboxgl.LngLatBounds(p1, p2);
-                    map.fitBounds(madeiraBounds);
-                }}
-                onZoomEnd={(e) => {
-                    if (!boundsSet) {
+            {showMap &&
+                <MapBox
+                    ref={mapRef}
+                    initialViewState={{
+                        longitude: -14.962,
+                        latitude: 32.745,
+                        zoom: 2,
+                    }}
+                    // interactiveLayerIds={['cameras-layer']}
+                    onClick={(e) => {
+                        console.log(e);
+                    }}
+                    onLoad={(e) => {
                         const map = mapRef.current.getMap();
-                        map.setMaxBounds(map.getBounds());
-                        setBoundsSet(true);
 
-                        setMapControls(true);
-                    }
-                }}
-                mapStyle={mapStyle}
-                mapboxAccessToken='pk.eyJ1IjoibTNpZGEiLCJhIjoiY2t5YWUwcWJhMDRtYzJ3bzh4aXdzaXR5biJ9.fSgha4dxWzm65sez1AZ7HA'
-            >
-                <CamerasLayer mapRef={mapRef} />
-            </MapBox> : null}
+                        loadImages(map);
+
+                        setMapControls(false);
+
+                        map.dragRotate.disable();
+                        var p1 = { lng: -17.30463610839638, lat: 32.61438311514739 };
+                        var p2 = { lng: -16.614557373046978, lat: 32.89964297003729 };
+
+                        var madeiraBounds = new mapboxgl.LngLatBounds(p1, p2);
+                        map.fitBounds(madeiraBounds);
+                    }}
+                    onZoomEnd={(e) => {
+                        if (!boundsSet) {
+                            const map = mapRef.current.getMap();
+                            map.setMaxBounds(map.getBounds());
+                            setBoundsSet(true);
+
+                            setMapControls(true);
+                        }
+                    }}
+                    mapStyle={mapStyle}
+                    mapboxAccessToken='pk.eyJ1IjoibTNpZGEiLCJhIjoiY2t5YWUwcWJhMDRtYzJ3bzh4aXdzaXR5biJ9.fSgha4dxWzm65sez1AZ7HA'
+                >
+                    {/* <CamerasLayer mapRef={mapRef} /> */}
+                    {cities.map((elem, index) => {
+                        return <Marker key={index} latitude={elem.coordinates[1]} longitude={elem.coordinates[0]}><RoomRoundedIcon color='secondary' fontSize='60' /></Marker>
+                    })}
+                </MapBox>}
             <ThemeSwitch
-                src={mapStyle == style1 ? './img/light.svg' : './img/dark.svg'}
+                src={mapStyle === style1 ? './img/light.svg' : './img/dark.svg'}
                 onClick={(e) => {
-                    setMapStyle(mapStyle == style1 ? style2 : style1);
+                    setMapStyle(mapStyle === style1 ? style2 : style1);
                 }}
             />
         </MapContainer>
