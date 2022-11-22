@@ -134,6 +134,7 @@ function Map() {
                     {/* <CamerasLayer mapRef={mapRef} /> */}
                     {cities.map((elem, index) => {
                         return <Marker key={index} latitude={elem.coordinates[1]} longitude={elem.coordinates[0]}><RoomRoundedIcon color='secondary' fontSize='60' /></Marker>
+                        
                     })}
                 </MapBox>}
             <ThemeSwitch
