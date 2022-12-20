@@ -77,12 +77,104 @@ const cities = [
         text: 'Igreja da Sé',
         coordinates: [-16.90832551714482, 32.64822131771056]
     },{
-        text: 'Museu do Açucar',
-        coordinates: [ -16.907069746006854, 32.64850512124363]
+        text: 'Levada dos Tornos',
+        coordinates: [ -16.8459748846594, 32.67533603415975]
     },{
+        text: 'Largo da Achada',
+        coordinates: [-16.84548341677708, 32.67975709695652]
+    },
+    {
+        text: 'Quinta do Santo ',
+        coordinates: [ -16.817856370211647, 32.72621229336328]
+    },
+    {
+        text: 'Miradouro do Pico do Facho',
+        coordinates: [-16.75869229077785, 32.724084148935745]
+    },
+    {
+        text: 'Igreja de Nossa Senhora da Conceição',
+        coordinates: [-16.766106387053462, 32.7188316749214]
+    },
+    {
+        text: 'Capela de Nossa Senhora da Piedade',
+        coordinates: [-16.713269923481167, 32.74292647036701]
+    },
+    {
+        text: 'Museu da Baleia',
+        coordinates: [-16.74047684035708, 32.735885669641576]
+    },
+    {
+        text: 'Furna Cave',
+        coordinates: [ -16.69382834769262, 32.75063088651697]
+    },
+    {
+        text: 'Praia do Faial',
+        coordinates: [ -16.85001408002769, 32.792564811578735]
+    },
+    {
         text: 'Museu do Açucar',
         coordinates: [ -16.907069746006854, 32.64850512124363]
     },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+    {
+        text: 'Museu do Açucar',
+        coordinates: [ -16.907069746006854, 32.64850512124363]
+    },
+
 ];
 
 export default cities;
