@@ -51,6 +51,7 @@ function Map() {
   const [boundsSet, setBoundsSet] = useState(false);
   const [mapStyle, setMapStyle] = useState(style1);
   const [openModal, setOpenModal] = useState(false);
+  const [modalInfo, setModalInfo] = useState({});
 
   const interactions = [
     "scrollZoom",
@@ -148,7 +149,10 @@ function Map() {
           {cities.map((elem, index) => {
             return (
               <Marker
-                onClick={() => setOpenModal(true)}
+                onClick={() => {
+                  setOpenModal(true);
+                  setModalInfo({ title: elem.title, img: elem.imgURL })
+                }}
                 key={index}
                 latitude={elem.coordinates[1]}
                 longitude={elem.coordinates[0]}
@@ -165,7 +169,7 @@ function Map() {
           setMapStyle(mapStyle === style1 ? style2 : style1);
         }}
       />
-      <Modal open={openModal} setOpen={setOpenModal} />
+      <Modal open={openModal} setOpen={setOpenModal} modalInfo={modalInfo} />
     </MapContainer>
   );
 }
