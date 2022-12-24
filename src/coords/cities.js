@@ -1,8 +1,13 @@
+import ff1 from '../img/1/1.png'
+import ff2 from '../img/1/2.png'
+import ff3 from '../img/1/3.png'
+import ff4 from '../img/1/4.png'
+
 const cities = [
     {
         text: 'Museu FF',
         coordinates: [ -16.903893395351496, 32.65149494768513],
-        imgURL: ['https://upload.wikimedia.org/wikipedia/commons/7/79/Museu_Henrique_e_Francisco_Franco.jpg', 'https://services.funchal.pt/inforoteiroturistico/images/24/museuFranciscoFranco.jpg', 'https://media-cdn.tripadvisor.com/media/photo-s/0e/95/60/d2/flotte-billeder.jpg', 'https://www.visitmadeira.com/media/2wveqrzp/museu-henrique-e-francisco-franco1-ricardo-paulino.jpg?width=1920&height=1080&rnd=133108437560670000'],
+        imgURL: [ff1, ff2, ff3, ff4],
         title: 'Museu Henrique e Francisco Franco'
 
     },

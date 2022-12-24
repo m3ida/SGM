@@ -2,12 +2,10 @@
 
 import { Backdrop, Box, Button, Modal, Typography } from "@mui/material";
 import Slider from "react-slick";
+import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
-
 
 const Fade = (props) => {
   const { in: open, children, onEnter, onExited, ...other } = props;
@@ -45,6 +43,17 @@ const style = {
   p: 4,
 };
 
+const CustomSlider = styled(Slider)`
+  & .slick-prev::before, & .slick-next::before {
+    font-size: 30px;
+    color: #000;
+  }
+  & .slick-prev, & .slick-next {
+    height: 40px;
+    width: 40px;
+  }
+`
+
 export default function CustomModal({ open, setOpen, modalInfo }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -79,13 +88,15 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
               {modalInfo.title}
             </Typography>
             <Typography id="spring-modal-description" sx={{ mt: 2 }}>
-              <div style={{height:'600px'}}>
-                <Slider {...settings}>
-                  {modalInfo.img?.map(((elem, index) => {
-                    return (<div width={'600px'} style={{overflow:'hidden'}}><img width={'600px'} style={{margin:'auto', overflow:'hidden'}} src={elem} /> </div>)
-                  }))}
-                </Slider>
-              </div>
+              <CustomSlider {...settings}>
+                {modalInfo.img?.map(((elem, index) => {
+                  return (
+                    <div key={index} width={'600px'} style={{ overflow: 'hidden' }}>
+                      <img alt="place" width={'600px'} style={{ margin: '0 auto', maxHeight: '500px', maxWidth:'500px', objectFit: 'contain' }} src={elem} />
+                    </div>
+                  )
+                }))}
+              </CustomSlider>
             </Typography>
           </Box>
         </Fade>
