@@ -1,0 +1,535 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Museu FF",
+                "images": [
+                    "1/1.png",
+                    "1/2.png",
+                    "1/3.png",
+                    "1/4.png"
+                ],
+                "title": "Museu Henrique e Francisco Franco"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.903893395351496,
+                    32.65149494768513
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "images": [
+                    "2/1.png",
+                    "2/2.png",
+                    "2/3.png",
+                    "2/4.png"
+                ],
+                "text": "Museu do Açucar",
+                "title": "Museu A Cidade do Açúcar"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.907017027716385,
+                    32.648311559004235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "images": [
+                    "3/1.png",
+                    "3/2.png",
+                    "3/3.png",
+                    "3/4.png",
+                    "3/5.png",
+                    "3/6.png"
+                ],
+                "text": "Jardim Botanico",
+                "title": "Jardim Botânico da Madeira"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.894732944151812,
+                    32.66254156439047
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Blandys Wine Lodge",
+                "images": [
+                    "4/1.jpg",
+                    "4/2.jpg",
+                    "4/3.jpg",
+                    "4/4.jpg",
+                    "4/5.jpg"
+                ],
+                "title": "Blandy's Wine Lodge"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.910624726039863,
+                    32.64787574755793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Ruinas de Sao Jorge",
+                "images": [
+                    "5/1.jpg",
+                    "5/2.png",
+                    "5/3.jpg",
+                    "5/4.png",
+                    "5/5.png"
+                ],
+                "title": "Ruínas de São Jorge"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.897686298163855,
+                    32.829943827981865
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Parque Tematico",
+                "images": [
+                    "6/1.jpg",
+                    "6/2.png",
+                    "6/3.jpg",
+                    "6/4.jpg",
+                    "6/5.png",
+                    "6/6.png",
+                    "6/7.png",
+                    "6/8.png"
+                ],
+                "title": "Parque Temático da Madeira"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.88439591124723,
+                    32.8032877283233
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Cristo Rei",
+                "images": [
+                    "7/1.jpg",
+                    "7/2.jpg",
+                    "7/3.jpg",
+                    "7/4.jpg",
+                    "7/5.JPG",
+                    "7/6.png",
+                    "7/7.png"
+                ],
+                "title": "Miradouro do Cristo Rei"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.850579490542646,
+                    32.63854322204222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Colegio dos Jesuitas",
+                "images": [
+                    "8/1.png",
+                    "8/2.png",
+                    "8/3.png"
+                ],
+                "title": "Colégio dos Jesuitas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.90923651714468,
+                    32.650222383939635
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Cabo Girao",
+                "images": [
+                    "9/1.png",
+                    "9/2.png",
+                    "9/3.png",
+                    "9/4.png"
+                ],
+                "title": "Cabo Girao"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.004332248643756,
+                    32.65560776357376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Miradouro Eira do Serrado",
+                "images": [
+                    "10/1.png",
+                    "10/2.png",
+                    "10/3.png",
+                    "10/4.png"
+                ],
+                "title": "Miradouro Eira do Serrado"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.96553329994667,
+                    32.71047170121687
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Pico do Arieiro",
+                "images": [
+                    "11/1.png",
+                    "11/2.png",
+                    "11/3.png"
+                ],
+                "title": "Pico do Arieiro"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.928891960936674,
+                    32.736242064990336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Capela do Corpo Santo",
+                "images": [
+                    "12/1.png",
+                    "12/2.png"
+                ],
+                "title": "Capela do Corpo Santo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.900322834382155,
+                    32.649689400499085
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Casas de Santana",
+                "images": [
+                    "13/1.png",
+                    "13/2.png",
+                    "13/3.png"
+                ],
+                "title": "Casas de Santana"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.882610728836077,
+                    32.80563542576975
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Portas da Cidade",
+                "images": [
+                    "14/1.png",
+                    "14/2.png"
+                ],
+                "title": "Portas da Cidade"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.906796917144778,
+                    32.64772095671906
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Palacio de Sao Lourenco",
+                "images": [
+                    "15/1.png",
+                    "15/2.png",
+                    "15/3.png",
+                    "15/4.png"
+                ],
+                "title": "Palacio de Sao Lourenco"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.91004508645616,
+                    32.647380522432314
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Pilar de Banger",
+                "images": [
+                    "16/1.png",
+                    "16/2.png"
+                ],
+                "title": "Pilar de Banger"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.908616072964442,
+                    32.64689432191945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Estátua João Gonçalves Zarco",
+                "images": [
+                    "17/1.png",
+                    "17/2.png",
+                    "17/3.png"
+                ],
+                "title": "Estátua João Gonçalves Zarco"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.909741272964357,
+                    32.648173555667434
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Câmara Municipal de Santana",
+                "images": [
+                    "18/1.png",
+                    "18/2.png"
+                ],
+                "title": "Câmara Municipal de Santana"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.882250215288973,
+                    32.80558348910334
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Câmara Municipal do Funchal",
+                "images": [],
+                "title": "Câmara Municipal do Funchal"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.90806498465569,
+                    32.650474200977136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Igreja da Sé",
+                "images": [],
+                "title": "Igreja da Sé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.90832551714482,
+                    32.64822131771056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Levada dos Tornos",
+                "images": [],
+                "title": "Levada dos Tornos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.8459748846594,
+                    32.67533603415975
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Largo da Achada",
+                "images": [],
+                "title": "Largo da Achada"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.84548341677708,
+                    32.67975709695652
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Quinta do Santo",
+                "images": [],
+                "title": "Quinta do Santo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.817856370211647,
+                    32.72621229336328
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Miradouro do Pico do Facho",
+                "images": [],
+                "title": "Miradouro do Pico do Facho"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.75869229077785,
+                    32.724084148935745
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Igreja de Nossa Senhora da Conceição",
+                "images": [],
+                "title": "Igreja de Nossa Senhora da Conceição"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.766106387053462,
+                    32.7188316749214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Capela de Nossa Senhora da Piedade",
+                "images": [],
+                "title": "Capela de Nossa Senhora da Piedade"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.713269923481167,
+                    32.74292647036701
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Museu da Baleia",
+                "images": [],
+                "title": "Museu da Baleia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.74047684035708,
+                    32.735885669641576
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Furna Cave",
+                "images": [],
+                "title": "Furna Cave"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.69382834769262,
+                    32.75063088651697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Praia do Faial",
+                "images": [],
+                "title": "Praia do Faial"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.85001408002769,
+                    32.792564811578735
+                ]
+            }
+        }
+    ]
+}
