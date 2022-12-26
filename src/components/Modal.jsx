@@ -92,7 +92,7 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
                 {modalInfo.img?.map(((elem, index) => {
                   return (
                     <div key={index} width={'600px'} style={{ overflow: 'hidden' }}>
-                      <img alt="place" width={'600px'} style={{ margin: '0 auto', maxHeight: '500px', maxWidth:'500px', objectFit: 'contain' }} src={elem} />
+                      <img alt="place" width={'600px'} style={{ margin: '0 auto', height: '500px', width:'500px', objectFit: 'cover' }} src={elem} />
                     </div>
                   )
                 }))}
