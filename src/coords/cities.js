@@ -134,7 +134,7 @@ const cities = [
     {
         text: 'Cristo Rei',
         coordinates: [-16.850579490542646, 32.63854322204222],
-        imgURL: [cristo1,cristo2,cristo3,cristo4,cristo5,cristo6,cristo7],
+        imgURL: [cristo1,cristo2,cristo3,cristo4, cristo5 ,cristo6,cristo7],
         title: 'Miradouro do Cristo Rei'
     },
     {
