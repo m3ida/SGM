@@ -41,6 +41,7 @@ const ThemeSwitch = styled.img`
   height: 3em;
 `;
 
+
 //webcam camara de lobos: https://www.netmadeira.com/webcams-madeira/load/netmadeira/camara-de-lobos/1654299741/4a37790b163a5a34598dd88b68139d2e
 
 function Map() {
@@ -182,6 +183,7 @@ function Map() {
                         <Layer {...clusterCountLayer} />
                         <Layer {...unclusteredPointLayer} />
                     </Source>
+                    <nav id="filter-group" class="filter-group"></nav>
                 </MapBox>
             )}
             <ThemeSwitch
