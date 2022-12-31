@@ -153,6 +153,11 @@ function Map() {
                         var madeiraBounds = new mapboxgl.LngLatBounds(p1, p2);
                         map.fitBounds(madeiraBounds);
                     }}
+                    onStyleData={()=>{
+                        const map = mapRef.current.getMap();
+
+                        loadImages(map);
+                    }}
                     onZoomEnd={(e) => {
                         if (!boundsSet) {
                             const map = mapRef.current.getMap();
