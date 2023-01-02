@@ -95,7 +95,7 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
                   return (
                     <center>
                       <div key={index} width={'600px'} style={{ overflow: 'hidden', display: 'flex', alignItems: "center", justifyContent: "center" }}>
-                        <video controls width="600" autoPlay style={{ margin: "0 auto" }}>
+                        <video controls width="600" style={{ margin: "0 auto" }}>
                           <source src={elem} type="video/mp4" />
 
                           Your browser does not support the video tag.
@@ -104,12 +104,11 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
                     </center>
                   )
                 }))}
-                {modalInfo.videos?.map(((elem, index) => {
+                {modalInfo.iframes?.map(((elem, index) => {
                   return (
                     <center>
                       <div key={index} width={'600px'} style={{ overflow: 'hidden', display: 'flex', alignItems: "center", justifyContent: "center" }}>
                         <iframe
-                          src="https://3dwarehouse.sketchup.com/embed.html?mid=u33ee83a9-f9a6-4a14-8950-c487ded2ea4a&width=580&height=326"
                           frameborder="0" scrolling="no" marginheight="0"
                           marginwidth="0" width="580" height="326" allowfullscreen>
                         </iframe>

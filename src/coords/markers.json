@@ -1,3 +1,5 @@
+
+
 {
     "type": "FeatureCollection",
     "crs": {
@@ -480,11 +482,10 @@
                 "images": [
                     "23/1.png",
                     "23/2.png",
-                    "23/3.png",
-                    "23/4.png"
+                    "23/3.png"
                 ],
                 "iframes": [
-                    "5.skp"
+                    
                 ],
                 "title": "Câmara Municipal do Funchal"
             },
