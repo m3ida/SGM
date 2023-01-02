@@ -39,11 +39,13 @@ const style = {
   width: 700,
   bgcolor: "background.paper",
   border: "2px solid #000",
+  borderRadius: "10px",
   boxShadow: 24,
   p: 4,
   display: 'flex',
   flexDirection: "column",
 };
+
 
 const CustomSlider = styled(Slider)`
   & .slick-prev::before, & .slick-next::before {
@@ -86,7 +88,7 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="spring-modal-title" variant="h4" component="h1">
+            <Typography id="spring-modal-title" style={{fontFamily:"Helvectica", }}  variant="h4" component="h1">
               {modalInfo.title}
             </Typography>
             <Typography id="spring-modal-description" sx={{ mt: 2 }}>

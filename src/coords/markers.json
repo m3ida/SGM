@@ -264,7 +264,9 @@
                 "text": "Capela do Corpo Santo",
                 "images": [
                     "12/1.png",
-                    "12/2.png"
+                    "12/2.png",
+                    "12/3.jpg",
+                    "12/4.png"
                 ],
                 "videos": [
                     "1/8.mp4"
@@ -400,7 +402,8 @@
                 "text": "Igreja de Nossa Senhora da Conceição",
                 "images": [
                     "19/1.png",
-                    "19/2.png"
+                    "19/2.png",
+                    "19/3.jpg"
                 ],
                 "title": "Igreja de Nossa Senhora da Conceição"
             },
@@ -520,6 +523,7 @@
             "properties": {
                 "text": "Aquário da Madeira",
                 "images": [
+                    "25/1.png",
                     "25/2.png",
                     "25/3.png",
                     "25/4.png"
@@ -871,6 +875,31 @@
                 "coordinates": [
                     -17.113717644779886,
                     32.68663854481687
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "Museu de Arte Contemporânea da Madeira (Mudas)",
+                "images": [
+                    "42/1.jpg",
+                    "42/2.jpg",
+                    "42/3.jpg",
+                    "42/4.jpg",
+                    "42/5.jpg",
+                    "42/6.jpg",
+                    "42/7.jpg"
+                ],
+                "videos": [
+                    "1/20.mp4"
+                ],
+                "title": "Museu de Arte Contemporânea da Madeira (Mudas)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                     -17.180549917751513,32.7232591766001
                 ]
             }
         }
