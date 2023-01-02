@@ -120,8 +120,14 @@ function Map() {
                             let images = JSON.parse(properties.images).map(imageName => {
                                 return require('../img/' + imageName)
                             })
+                            let iframes = properties.iframes ? JSON.parse(properties.iframes).map(iframeName => {
+                                return require('../iframes/' + iframeName)
+                            }):[]
+                            let videos = properties.videos ? JSON.parse(properties.videos).map(videoName => {
+                                return require('../videos/' + videoName)
+                            }):[]
                             setOpenModal(true);
-                            setModalInfo({ title: properties.title, img: images })
+                            setModalInfo({ title: properties.title, img: images, videos: videos, iframes: iframes })
                         } else {
                             const mapboxSource = mapRef.current.getSource('places');
 
@@ -153,7 +159,7 @@ function Map() {
                         var madeiraBounds = new mapboxgl.LngLatBounds(p1, p2);
                         map.fitBounds(madeiraBounds);
                     }}
-                    onStyleData={()=>{
+                    onStyleData={() => {
                         const map = mapRef.current.getMap();
 
                         loadImages(map);

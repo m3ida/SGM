@@ -36,11 +36,13 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 600,
+  width: 700,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+  display: 'flex',
+  flexDirection: "column",
 };
 
 const CustomSlider = styled(Slider)`
@@ -65,7 +67,7 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 2
+    initialSlide: 0
   };
 
   return (
@@ -89,11 +91,39 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
             </Typography>
             <Typography id="spring-modal-description" sx={{ mt: 2 }}>
               <CustomSlider {...settings}>
+                {modalInfo.videos?.map(((elem, index) => {
+                  return (
+                    <center>
+                      <div key={index} width={'600px'} style={{ overflow: 'hidden', display: 'flex', alignItems: "center", justifyContent: "center" }}>
+                        <video controls width="600" autoPlay style={{ margin: "0 auto" }}>
+                          <source src={elem} type="video/mp4" />
+
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </center>
+                  )
+                }))}
+                {modalInfo.videos?.map(((elem, index) => {
+                  return (
+                    <center>
+                      <div key={index} width={'600px'} style={{ overflow: 'hidden', display: 'flex', alignItems: "center", justifyContent: "center" }}>
+                        <iframe
+                          src="https://3dwarehouse.sketchup.com/embed.html?mid=u33ee83a9-f9a6-4a14-8950-c487ded2ea4a&width=580&height=326"
+                          frameborder="0" scrolling="no" marginheight="0"
+                          marginwidth="0" width="580" height="326" allowfullscreen>
+                        </iframe>
+                      </div>
+                    </center>
+                  )
+                }))}
                 {modalInfo.img?.map(((elem, index) => {
                   return (
-                    <div key={index} width={'600px'} style={{ overflow: 'hidden' }}>
-                      <img alt="place" width={'600px'} style={{ margin: '0 auto', height: '500px', width:'500px', objectFit: 'cover' }} src={elem} />
-                      
+                    <div key={index} width={'600px'} style={{
+                      overflow: 'hidden', display: 'flex', alignItems: "center", justifyContent: "center"
+                    }}>
+                      < img alt="place" width={'600px'} style={{ margin: '0 auto', height: '500px', width: '500px', objectFit: 'cover' }} src={elem} />
+
                     </div>
                   )
                 }))}
@@ -102,6 +132,6 @@ export default function CustomModal({ open, setOpen, modalInfo }) {
           </Box>
         </Fade>
       </Modal>
-    </div>
+    </div >
   );
 }

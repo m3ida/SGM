@@ -17,6 +17,9 @@
                     "1/3.png",
                     "1/4.png"
                 ],
+                "videos": [
+                    "1/1.mp4"
+                ],
                 "title": "Museu Henrique e Francisco Franco"
             },
             "geometry": {
@@ -58,6 +61,9 @@
                     "3/5.png",
                     "3/6.png"
                 ],
+                "videos": [
+                    "1/2.mp4"
+                ],
                 "text": "Jardim Botanico",
                 "title": "Jardim Botânico da Madeira"
             },
@@ -79,6 +85,9 @@
                     "4/3.jpg",
                     "4/4.jpg",
                     "4/5.jpg"
+                ],
+                "videos": [
+                    "1/3.mp4"
                 ],
                 "title": "Blandy's Wine Lodge"
             },
@@ -147,6 +156,9 @@
                     "7/6.png",
                     "7/7.png"
                 ],
+                "videos": [
+                    "1/4.mp4"
+                ],
                 "title": "Miradouro do Cristo Rei"
             },
             "geometry": {
@@ -186,7 +198,10 @@
                     "9/3.png",
                     "9/4.png"
                 ],
-                "title": "Cabo Girao"
+                "videos": [
+                    "1/5.mp4"
+                ],
+                "title": "Cabo Girão"
             },
             "geometry": {
                 "type": "Point",
@@ -205,6 +220,9 @@
                     "10/2.png",
                     "10/3.png",
                     "10/4.png"
+                ],
+                "videos": [
+                    "1/6.mp4"
                 ],
                 "title": "Miradouro Eira do Serrado"
             },
@@ -225,6 +243,9 @@
                     "11/2.png",
                     "11/3.png"
                 ],
+                "videos": [
+                    "1/7.mp4"
+                ],
                 "title": "Pico do Areiro"
             },
             "geometry": {
@@ -242,6 +263,9 @@
                 "images": [
                     "12/1.png",
                     "12/2.png"
+                ],
+                "videos": [
+                    "1/8.mp4"
                 ],
                 "title": "Capela do Corpo Santo"
             },
@@ -261,6 +285,9 @@
                     "13/1.png",
                     "13/2.png",
                     "13/3.png"
+                ],
+                "videos": [
+                    "1/9.mp4"
                 ],
                 "title": "Casas de Santana"
             },
@@ -300,7 +327,7 @@
                     "15/3.png",
                     "15/4.png"
                 ],
-                "title": "Palacio de Sao Lourenco"
+                "title": "Palácio de São Lourenço"
             },
             "geometry": {
                 "type": "Point",
@@ -369,13 +396,17 @@
             "type": "Feature",
             "properties": {
                 "text": "Igreja de Nossa Senhora da Conceição",
-                "images": ["19/1.png","19/2.png"],
+                "images": [
+                    "19/1.png",
+                    "19/2.png"
+                ],
                 "title": "Igreja de Nossa Senhora da Conceição"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.766121280878536, 32.71868367217678 
+                    -16.766121280878536,
+                    32.71868367217678
                 ]
             }
         },
@@ -383,13 +414,20 @@
             "type": "Feature",
             "properties": {
                 "text": "Sé Catedral do Funchal",
-                "images": ["20/1.jpg","20/2.jpg","20/3.jpg","20/4.jpg","20/5.jpg"],
+                "images": [
+                    "20/1.jpg",
+                    "20/2.jpg",
+                    "20/3.jpg",
+                    "20/4.jpg",
+                    "20/5.jpg"
+                ],
                 "title": "Sé Catedral do Funchal"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.908282161582903,32.64812951206667
+                    -16.908282161582903,
+                    32.64812951206667
                 ]
             }
         },
@@ -397,13 +435,21 @@
             "type": "Feature",
             "properties": {
                 "text": "Museu de Imprensa da Madeira",
-                "images": ["21/1.png","21/2.png","21/3.png","21/4.png","21/5.jpg","21/6.jpeg"],
+                "images": [
+                    "21/1.png",
+                    "21/2.png",
+                    "21/3.png",
+                    "21/4.png",
+                    "21/5.jpg",
+                    "21/6.jpeg"
+                ],
                 "title": "Museu de Imprensa da Madeira"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.97913066569846, 32.64931279596338
+                    -16.97913066569846,
+                    32.64931279596338
                 ]
             }
         },
@@ -411,13 +457,19 @@
             "type": "Feature",
             "properties": {
                 "text": "Forte de São Bento",
-                "images": ["22/1.png","22/2.png","22/3.png","22/4.png"],
+                "images": [
+                    "22/1.png",
+                    "22/2.png",
+                    "22/3.png",
+                    "22/4.png"
+                ],
                 "title": "Forte de São Bento"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -17.064864061666473,32.66988873687276
+                    -17.064864061666473,
+                    32.66988873687276
                 ]
             }
         },
@@ -425,13 +477,22 @@
             "type": "Feature",
             "properties": {
                 "text": "Câmara Municipal do Funchal",
-                "images": ["23/1.png","23/2.png","23/3.png","23/4.png"],
+                "images": [
+                    "23/1.png",
+                    "23/2.png",
+                    "23/3.png",
+                    "23/4.png"
+                ],
+                "iframes": [
+                    "5.skp"
+                ],
                 "title": "Câmara Municipal do Funchal"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                 -16.908192602553285,32.65033226255013
+                    -16.908192602553285,
+                    32.65033226255013
                 ]
             }
         },
@@ -439,13 +500,17 @@
             "type": "Feature",
             "properties": {
                 "text": "Trash Wall Art Seallion",
-                "images": ["24/1.png","24/2.png"],
+                "images": [
+                    "24/1.png",
+                    "24/2.png"
+                ],
                 "title": "Trash Wall Art Seallion"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -16.975535537076343,32.64706317960493
+                    -16.975535537076343,
+                    32.64706317960493
                 ]
             }
         },
@@ -453,13 +518,18 @@
             "type": "Feature",
             "properties": {
                 "text": "Aquário da Madeira",
-                "images": ["25/1.png","25/2.png","25/3.png","25/4.png"],
+                "images": [
+                    "25/2.png",
+                    "25/3.png",
+                    "25/4.png"
+                ],
                 "title": "Aquário da Madeira"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -17.165368805749868,32.86725672004431
+                    -17.165368805749868,
+                    32.86725672004431
                 ]
             }
         },
@@ -467,13 +537,23 @@
             "type": "Feature",
             "properties": {
                 "text": "Levada dos Tornos",
-                "images": ["26/1.png","26/2.png","26/3.png","26/4.png","26/5.png"],
+                "images": [
+                    "26/1.png",
+                    "26/2.png",
+                    "26/3.png",
+                    "26/4.png",
+                    "26/5.png"
+                ],
+                "videos": [
+                    "1/10.mp4"
+                ],
                 "title": "Levada dos Tornos"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -16.846024890353608,32.675188537139235
+                    -16.846024890353608,
+                    32.675188537139235
                 ]
             }
         },
@@ -481,13 +561,18 @@
             "type": "Feature",
             "properties": {
                 "text": "Largo da Achada",
-                "images": ["27/1.png","27/2.png","27/3.png"],
+                "images": [
+                    "27/1.png",
+                    "27/2.png",
+                    "27/3.png"
+                ],
                 "title": "Largo da Achada"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.845521239491635,32.6795152826779
+                    -16.845521239491635,
+                    32.6795152826779
                 ]
             }
         },
@@ -495,13 +580,19 @@
             "type": "Feature",
             "properties": {
                 "text": "Quinta Santo Antonio Da Serra",
-                "images": ["28/1.png","28/2.png","28/3.png","28/4.png"],
-                "title": "Quinta Santo Antonio Da Serra"
+                "images": [
+                    "28/1.png",
+                    "28/2.png",
+                    "28/3.png",
+                    "28/4.png"
+                ],
+                "title": "Quinta Santo António Da Serra"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.817867486765238,32.72364349360687
+                    -16.817867486765238,
+                    32.72364349360687
                 ]
             }
         },
@@ -509,13 +600,18 @@
             "type": "Feature",
             "properties": {
                 "text": "Miradouro do Pico do Facho",
-                "images": ["29/1.png","29/2.png","29/3.png"],
+                "images": [
+                    "29/1.png",
+                    "29/2.png",
+                    "29/3.png"
+                ],
                 "title": "Miradouro do Pico do Facho"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    32.72390548107462, -16.758728657963687
+                    32.72390548107462,
+                    -16.758728657963687
                 ]
             }
         },
@@ -523,13 +619,20 @@
             "type": "Feature",
             "properties": {
                 "text": "Capela de Nossa Senhora da Piedade",
-                "images": ["30/1.jpg","30/2.jpg"],
+                "images": [
+                    "30/1.jpg",
+                    "30/2.jpg"
+                ],
+                "videos": [
+                    "1/11.mp4"
+                ],
                 "title": "Capela de Nossa Senhora da Piedade"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.713272049105814,32.74289506996452
+                    -16.713272049105814,
+                    32.74289506996452
                 ]
             }
         },
@@ -537,13 +640,22 @@
             "type": "Feature",
             "properties": {
                 "text": "Museu da Baleia da Madeira",
-                "images": ["31/1.jpg","31/2.jpg","31/3.JPG","31/4.JPG"],
+                "images": [
+                    "31/1.jpg",
+                    "31/2.jpg",
+                    "31/3.JPG",
+                    "31/4.JPG"
+                ],
+                "videos": [
+                    "1/12.mp4"
+                ],
                 "title": "Museu da Baleia da Madeira"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -16.740476442111138, 32.73585161935975
+                    -16.740476442111138,
+                    32.73585161935975
                 ]
             }
         },
@@ -551,13 +663,18 @@
             "type": "Feature",
             "properties": {
                 "text": "Praia do Faial",
-                "images": ["32/1.jpg","32/2.jpg","32/3.JPG"],
+                "images": [
+                    "32/1.jpg",
+                    "32/2.jpg",
+                    "32/3.JPG"
+                ],
                 "title": "Praia do Faial"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -16.850019886848486,32.79259223719253
+                    -16.850019886848486,
+                    32.79259223719253
                 ]
             }
         },
@@ -565,13 +682,21 @@
             "type": "Feature",
             "properties": {
                 "text": " Igreja Matriz de São Vicente ",
-                "images": ["33/1.jpeg","33/2.jpg","33/3.jpg"],
+                "images": [
+                    "33/1.jpeg",
+                    "33/2.jpg",
+                    "33/3.jpg"
+                ],
+                "videos": [
+                    "1/13.mp4"
+                ],
                 "title": "Igreja Matriz de São Vicente"
-            }, 
+            },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -17.047255176366285, 32.803720385306434
+                    -17.047255176366285,
+                    32.803720385306434
                 ]
             }
         },
@@ -579,13 +704,21 @@
             "type": "Feature",
             "properties": {
                 "text": " Praia do Porto do Seixal ",
-                "images": ["34/1.jpg","34/2.jpg","34/3.jpg"],
+                "images": [
+                    "34/1.jpg",
+                    "34/2.jpg",
+                    "34/3.jpg"
+                ],
+                "videos": [
+                    "1/14.mp4"
+                ],
                 "title": "Praia do Porto do Seixal"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.10312567264652,32.82235204337186
+                    -17.10312567264652,
+                    32.82235204337186
                 ]
             }
         },
@@ -593,13 +726,22 @@
             "type": "Feature",
             "properties": {
                 "text": "Lagoa do Fanal",
-                "images": ["35/1.jpg","35/2.jpg","35/3.jpg","35/4.jpg"],
+                "images": [
+                    "35/1.jpg",
+                    "35/2.jpg",
+                    "35/3.jpg",
+                    "35/4.jpg"
+                ],
+                "videos": [
+                    "1/15.mp4"
+                ],
                 "title": "Lagoa do Fanal"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.149176446622644,32.81375627395487
+                    -17.149176446622644,
+                    32.81375627395487
                 ]
             }
         },
@@ -607,13 +749,20 @@
             "type": "Feature",
             "properties": {
                 "text": "Miradouro da Ribeira da Janela",
-                "images": ["36/1.JPG","36/2.jpg"],
+                "images": [
+                    "36/1.JPG",
+                    "36/2.jpg"
+                ],
+                "videos": [
+                    "1/16.mp4"
+                ],
                 "title": "Miradouro da Ribeira da Janela"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.153410340049188,32.85509765619949
+                    -17.153410340049188,
+                    32.85509765619949
                 ]
             }
         },
@@ -621,13 +770,21 @@
             "type": "Feature",
             "properties": {
                 "text": "Levada do Moinho",
-                "images": ["37/1.jpg","37/2.jpg","37/3.jpg"],
+                "images": [
+                    "37/1.jpg",
+                    "37/2.jpg",
+                    "37/3.jpg"
+                ],
+                "videos": [
+                    "1/17.mp4"
+                ],
                 "title": "Levada do Moinho"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.20637176360009,32.841095631303794
+                    -17.20637176360009,
+                    32.841095631303794
                 ]
             }
         },
@@ -635,13 +792,21 @@
             "type": "Feature",
             "properties": {
                 "text": "Miradouro do Farol da Ponta do Pargo",
-                "images": ["38/1.jpg","38/2.jpg","38/3.jpg"],
+                "images": [
+                    "38/1.jpg",
+                    "38/2.jpg",
+                    "38/3.jpg"
+                ],
+                "videos": [
+                    "1/18.mp4"
+                ],
                 "title": "Miradouro do Farol da Ponta do Pargo"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.263069082971302,32.81411524204553
+                    -17.263069082971302,
+                    32.81411524204553
                 ]
             }
         },
@@ -649,39 +814,62 @@
             "type": "Feature",
             "properties": {
                 "text": "Miradouro da Bica da Cana",
-                "images": ["39/1.jpg","39/2.jpg","39/3.jpg","39/4.jpg"],
+                "images": [
+                    "39/1.jpg",
+                    "39/2.jpg",
+                    "39/3.jpg",
+                    "39/4.jpg"
+                ],
+                "videos": [
+                    "1/19.mp4"
+                ],
                 "title": "Miradouro da Bica da Cana"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.054708924056495, 32.75656217852753
+                    -17.054708924056495,
+                    32.75656217852753
                 ]
             }
-        },{
+        },
+        {
             "type": "Feature",
             "properties": {
                 "text": "Praia do Paúl do Mar",
-                "images": ["40/1.jpg","40/2.jpg"],
+                "images": [
+                    "40/1.jpg",
+                    "40/2.jpg"
+                ],
                 "title": "Praia do Paúl do Mar"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.234809620499377,32.76466934956259
+                    -17.234809620499377,
+                    32.76466934956259
                 ]
             }
-        },{
+        },
+        {
             "type": "Feature",
             "properties": {
                 "text": "Cascata dos Anjos",
-                "images": ["41/1.jpg","41/2.jpg","41/3.jpg"],
+                "images": [
+                    "41/1.jpg",
+                    "41/2.jpg",
+                    "41/3.jpg"
+                ],
+                "videos": [
+                    "1/20.mp4"
+                ],
                 "title": "Cascata dos Anjos"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                     -17.113717644779886, 32.68663854481687
+                    -17.113717644779886,
+                    32.68663854481687
                 ]
             }
         }
