@@ -1,5 +1,6 @@
-#Madeira Spot
-##Intalação: npm i
-npm start
+Madeira Spot
+Intalação: npm i 
 
-###Caso seja necessário: npm i react-scrpits
+Running: npm start
+
+Caso seja necessário: npm i react-scrpits
