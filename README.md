@@ -1,6 +1,6 @@
-Madeira Spot
-Intalação: npm i 
+  # Madeira Spot
 
-Running: npm start
+## npm i para ter as dependências e o programa funcionar.
+## npm start para iniciar o programa
 
-Caso seja necessário: npm i react-scrpits
+### Se necessário: npm i react-scripts
